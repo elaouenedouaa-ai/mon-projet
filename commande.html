@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>DOUAA FRAGRANCE - Commande</title>
+        <link rel="stylesheet" href="style.css">
+</head>
+<body>
+       <nav>
+         <strong>DOUAA FRAGRANCE</strong> | 
+        <a href="acceuil.html">Accueil</a> | 
+        <a href="catalogue.html">Catalogue</a> | 
+        <a href="commande.html">Commande</a>  | 
+        <a href="panier.php">Panier</a> | 
+        
+        <button type="button">Connexion</button>
+        <button type="button">S'inscrire</button>
+    </nav>
+    
+    <h1>Bienvenue chez DOUAA FRAGRANCE</h1>
+    <h2>Passer votre commande</h2>
+
+    <form action="panier.php" method="POST">
+        
+        <p>
+            <label>Votre nom :</label>
+            <input type="text" name="nom" required>
+        </p>
+
+        <p>
+            <label>Catégorie :</label>
+            <select name="categorie">
+                <option value="Femme">Parfum Femme</option>
+                <option value="Homme">Parfum Homme</option>
+                <option value="Mixte">Parfum Mixte</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Choisir le parfum :</label>
+            <select name="parfum">
+                <option value="Rose Divine">Rose Divine</option>
+                <option value="Nuit d'Orient">Nuit d'Orient</option>
+                <option value="Oud Royal">Oud Royal</option>
+                <option value="Fleur de Jasmin">Fleur de Jasmin</option>
+            </select> 
+        </p>
+
+        <p>
+            <label>Contenance :</label>
+            <select name="contenance">
+                <option value="30ml">30 ml</option>
+                <option value="50ml">50 ml</option>
+                <option value="100ml">100 ml</option>
+            </select>
+        </p>
+
+        <p>
+            <label>Quantité :</label>
+            <input type="number" name="quantite"  required>
+        </p>
+
+        <p>
+            <button type="submit">Ajouter au panier</button>
+        </p>
+
+    </form>
+
+</body>
+</html>
